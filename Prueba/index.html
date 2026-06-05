@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina-Examen</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 p-5 font-sans text-gray-800">
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 max-w-screen-xl mx-auto">
+        
+      <!-- NAVBAR -->
+        <nav class="col-span-1 lg:col-span-4 bg-white border-gray-200 shadow-sm rounded-lg">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                
+                <!-- LOGO-->
+                <a href="#" class="flex items-center space-x-3">
+                    <img src="src/assets/logo 2.png" alt="Logo Principal" class="h-10 w-auto object-contain">
+                    <span class="self-center text-2xl font-bold whitespace-nowrap text-gray-900">SoftTech</span>
+                </a>
+  
+                <div class="flex md:order-2 space-x-3 items-center">
+                    <a href="#" class="block">
+                        <img class="w-9 h-9 rounded-full object-cover border-2 border-gray-200 hover:border-blue-700 transition-colors" src="src/assets/account.png" alt="Foto de perfil">
+                    </a>
+
+                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
+                        Iniciar sesión
+                    </button>
+                    <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/></svg>
+                    </button>
+                </div>
+                
+                <div class="hidden w-full md:block md:w-auto md:order-1" id="navbar-cta">
+                    <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-white">
+                        <li><a href="#" class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700">Inicio</a></li>
+                        <li><a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">Cursos</a></li>
+                        <li><a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">Nosotros</a></li>
+                        <li><a href="#" class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- RECTANGULO GRANDE -->
+        <section class="col-span-1 lg:col-span-4 bg-white rounded-lg shadow-sm overflow-hidden p-6 md:p-12 flex flex-col md:flex-row items-center gap-8 border border-gray-200">
+            <div class="w-full md:w-1/2 space-y-6">
+                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Aprende sin límites</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 leading-tight">Cursos online para impulsar tu futuro</h1>
+                <p class="text-lg text-gray-500">Explora nuestros cursos diseñados para todos los niveles. Aprende a tu ritmo con contenido práctico y actualizado.</p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300">
+                        Ver Cursos
+                    </a>
+                    <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100">
+                        Conocer más
+                    </a>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2">
+                <img class="w-full h-auto rounded-lg shadow-md object-cover max-h-80" src="src/assets/Desarrollo-de-software-2.jpg" alt="Estudiantes aprendiendo">
+            </div>
+        </section>
+
+        <!-- TARJETAS -->
+        <main class="col-span-1 lg:col-span-4 bg-gray-50 rounded-lg p-6 md:p-8 border border-gray-200">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-900">Cursos Destacados</h2>
+                <p class="text-gray-500 mt-2">Los programas más elegidos por nuestra comunidad.</p>
+            </div>
+            
+            <!-- ESPACIO DE TARJETAS -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- TARJETA 1 -->
+                <div class="w-full h-full bg-white border border-gray-200 rounded-lg shadow flex flex-col overflow-hidden transition-transform hover:-translate-y-1">
+                    <img class="w-full h-48 object-cover" src="src/assets/desarollo web.jpg" alt="Desarrollo Web">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded w-max mb-3 border border-gray-200">Desarrollo Web</span>
+                        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">Frontend con React</h5>
+                        <p class="mb-4 text-sm text-gray-600 flex-grow">Domina la biblioteca más popular de JavaScript creando interfaces interactivas desde cero.</p>
+                        
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-100">
+                            <span class="text-sm font-medium text-gray-500">Instructor: Juan P.</span>
+                            <span class="text-lg font-bold text-blue-700">$ 49.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA 2 -->
+                <div class="w-full h-full bg-white border border-gray-200 rounded-lg shadow flex flex-col overflow-hidden transition-transform hover:-translate-y-1">
+                    <img class="w-full h-48 object-cover" src="src/assets/figma.jpg" alt="Diseño UI">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded w-max mb-3 border border-gray-200">Diseño UX/UI</span>
+                        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">Diseño de Interfaces en Figma</h5>
+                        <p class="mb-4 text-sm text-gray-600 flex-grow">Aprende a crear wireframes, prototipos y diseños de alta fidelidad como un profesional.</p>
+                        
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-100">
+                            <span class="text-sm font-medium text-gray-500">Instructora: Ana G.</span>
+                            <span class="text-lg font-bold text-blue-700">$ 39.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA 3 -->
+                <div class="w-full h-full bg-white border border-gray-200 rounded-lg shadow flex flex-col overflow-hidden transition-transform hover:-translate-y-1">
+                    <img class="w-full h-48 object-cover" src="src/assets/python.jpg" alt="Data Science">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded w-max mb-3 border border-gray-200">Data Science</span>
+                        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900">Python para Análisis de Datos</h5>
+                        <p class="mb-4 text-sm text-gray-600 flex-grow">Aprende Pandas, NumPy y visualización de datos para tomar decisiones estratégicas.</p>
+                        
+                        <div class="flex justify-between items-center pt-4 border-t border-gray-100">
+                            <span class="text-sm font-medium text-gray-500">Instructor: Carlos R.</span>
+                            <span class="text-lg font-bold text-blue-700">$ 59.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- ESPACIO PARA ESTUDINTES -->
+        <section class="col-span-1 lg:col-span-4 bg-white rounded-lg shadow-sm border border-gray-200 p-6 md:p-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Lo que dicen nuestros estudiantes</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- PRIMER ESTUDIANTE -->
+                <div class="bg-gray-50 rounded-lg p-6 border border-gray-100">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img class="w-12 h-12 rounded-full object-cover" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80" alt="Usuario">
+                        <div>
+                            <div class="font-bold text-gray-900">María Fernández</div>
+                            <div class="text-yellow-400 text-sm">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm">"Los cursos son súper prácticos. En menos de un mes pude aplicar lo aprendido en mi trabajo y mejorar los tiempos de desarrollo de mi equipo."</p>
+                </div>
+
+                <!-- SEGUNDO ESTUDIANTE -->
+                <div class="bg-gray-50 rounded-lg p-6 border border-gray-100">
+
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img class="w-12 h-12 rounded-full object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Usuario">
+                        <div>
+                            <div class="font-bold text-gray-900">David Silva</div>
+                            <div class="text-yellow-400 text-sm">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm">"Excelente plataforma. La calidad de los videos y el material de soporte es de primera. Lo recomiendo totalmente para quienes quieran aprender desde cero."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="col-span-1 lg:col-span-4 bg-white rounded-lg shadow-sm border border-gray-200 p-6 md:p-10">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 border-b border-gray-100 pb-8">
+                <div class="space-y-4">
+                    <!-- LOGO -->
+                    <div class="flex items-center space-x-3">
+                        <img src="src/assets/logo 2.png" alt="Logo Principal" class="h-8 w-auto object-contain">
+                        <span class="text-xl font-bold text-gray-900">SoftTech</span>
+                    </div>
+                    <p class="text-sm text-gray-500">Aprende sin límites con nuestros cursos online diseñados por expertos de la industria.</p>
+                    
+                    <!--Redes Sociales-->
+                    <div class="flex items-center space-x-4 pt-2">
+                        <a href="#" class="opacity-70 hover:opacity-100 transition-opacity">
+                            <img src="src/assets/facebook.png" alt="Facebook" class="w-5 h-5 object-contain">
+                        </a>
+                        
+                        <a href="#" class="opacity-70 hover:opacity-100 transition-opacity">
+                            <img src="src/assets/twitter.png" alt="Twitter X" class="w-4 h-4 object-contain">
+                        </a>
+                        
+                        <a href="#" class="opacity-70 hover:opacity-100 transition-opacity">
+                            <img src="src/assets/instagram.png" alt="Instagram" class="w-5 h-5 object-contain">
+                        </a>
+                        
+                        <a href="#" class="opacity-70 hover:opacity-100 transition-opacity">
+                            <img src="src/assets/youtube.png" alt="YouTube" class="w-5 h-5 object-contain">
+                        </a>
+                    </div>
+                </div>
+            
+
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-blue-700 hover:underline">Inicio</a></li>
+                        <li><a href="#" class="hover:text-blue-700 hover:underline">Cursos</a></li>
+                        <li><a href="#" class="hover:text-blue-700 hover:underline">Nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4">Categorías</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="#" class="hover:text-blue-700 hover:underline">Desarrollo Web</a></li>
+                        <li><a href="#" class="hover:text-blue-700 hover:underline">Diseño UX/UI</a></li>
+                        <li><a href="#" class="hover:text-blue-700 hover:underline">Marketing</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-gray-900 mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li>maquinatoac@puce.edu.ec.com</li>
+                        <li>+593 123 456 789</li>
+                        <li>Quito, Ecuador</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center text-sm text-gray-400">
+                © 2024 Examen-Por Michael Quinatoa.
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
